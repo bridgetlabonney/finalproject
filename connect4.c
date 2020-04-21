@@ -6,6 +6,8 @@
 
 #include <stdio.h>
 
+int getMenuChoice();
+
 int main(){
   int option;
   do{
