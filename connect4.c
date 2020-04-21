@@ -8,6 +8,8 @@
 
 int main(){
   int option;
+  do{
+  option = getMenuChoice();
   switch(option){
     case 0:
       break;
@@ -18,6 +20,8 @@ int main(){
     default:
         printf("Please enter a valid option!\n");
       break;
+  }
+    while(option != 0);
   return 0;
 }
 
