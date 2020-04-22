@@ -31,7 +31,7 @@ int getMenuChoice(){
   int input;
   printf("***CONNECT 4***\n");
   printf("1. Play Game\n2. Show Scores\n 0. EXIT\n");
-  printf("Please enter your
+  printf("Enter your choice: ");
   scanf("%d", &input);
          return input;
   }
