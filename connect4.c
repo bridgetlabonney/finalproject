@@ -1,7 +1,7 @@
 //
 // final project: connect 4
 // marissa floam
-// 
+// Bridget LaBonney
 //
 
 #include <stdio.h>
@@ -9,6 +9,9 @@
 #include <stdbool.h>
 
 int getMenuChoice();
+void printBoard(char[][]);
+void updateBoard(char[][]);
+int checkPlayer();
 
 int main(){
   int option;
@@ -38,3 +41,16 @@ int getMenuChoice(){
          return input;
   }
   
+void printBoard(char arr[][]){
+  // simply prints out the board to the screen.
+  }
+  
+void updateBoard(char arr[][]){
+  //prompts the user for a move, and places the players move onto the board.
+  int player, move;
+  
+  }
+ 
+int checkPlayer(){
+  //checks which player's turn it is and returns a 0 or 1.
+}
