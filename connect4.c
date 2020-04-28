@@ -19,6 +19,7 @@ int checkPlayer(int);
 int main(){
   int option, turn = 0;
   char arr[ROW][COL] = {"[ ][ ][ ][ ][ ][ ][ ]","[ ][ ][ ][ ][ ][ ][ ]", "[ ][ ][ ][ ][ ][ ][ ]","[ ][ ][ ][ ][ ][ ][ ]","[ ][ ][ ][ ][ ][ ][ ]","[ ][ ][ ][ ][ ][ ][ ]"};
+  FILE* fp;
   
   do{
   option = getMenuChoice();
