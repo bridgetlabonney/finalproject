@@ -122,3 +122,47 @@ int checkPlayer(int turn){
   return 0;
   }
 }
+
+void playerNames(char player1[], char player2[]){
+   printf("Player 1, please enter your name: ");
+   scanf("%s", player1);
+   printf("Player 2, please enter your name: ");
+   scanf("%s", player2);
+}
+
+void getScores(FILE* file, int result, char player1[], char player2[]){
+  //opens file for writing, based on the result from playGame prints a name and # of games won to the file
+  int games = 1;
+  file = fopen(FILE_NAME, "w");
+  if(file == NULL){
+     printf("File could not be found.\n");
+  }
+  else{
+    if(result == 0){
+        fprintf(file, "%s %d\n", a, games);
+    }
+    else if(result == 1){
+      fprintf(file, "%s %d\n", b, games);
+    }
+    //gotta increment somewhere if the name is already in the file, working on it
+  }
+}
+
+void showScores(FILE* file){
+  //opens file for reading, should scan for names and scores and print them out in order of wins
+  char name[MAX];
+  char test;
+  int wins;
+  file = fopen(FILE_NAME, "r");
+  if(file == NULL){
+    printf("File could not be found.\n");
+  }
+  else{
+    printf("**HIGH SCORES**\n");
+    while(!feof(file)){
+      fscanf(file, "%s %d\n", &name, &wins);
+      //gotta implement order by number of wins here
+      printf("%s: %d", name, wins);
+    }
+  }
+     
