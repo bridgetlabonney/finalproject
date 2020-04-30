@@ -47,7 +47,7 @@ int getMenuChoice(){
          return input;
   }
   
-void printBoard(char arr[][SIZE]){
+void printBoard(char arr[][COL]){
   // simply prints out the board to the screen.
  int row, col;
   printf("---------------------\n");
